@@ -54,3 +54,7 @@ mein_neuer_bot erste Nachricht
 
 Die Weblinks oben sind nur als Demo zu betrachten 
 
+das ganze klappt auch mit eingenem Text
+
+**https://telegramiotbot.com/api/notify?token=xxxxxxxxxxx&message=hallo_bastlernrw**
+
