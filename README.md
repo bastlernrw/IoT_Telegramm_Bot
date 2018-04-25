@@ -23,12 +23,12 @@ Go to http://telegramiotbot.com/ for a full description.
 IoT Notification Bot:
 Type a name for the new device:
 
-**mein_neuer_bot**  <<<---- meine Eingabe bei Telegramm 
+**mein_neuer_bot**  <<<---- meine Eingabe bei Telegramm ( Bot Name ) 
 
 IoT Notification Bot:
 Type a notification message for your device mein_neuer_bot:
 
-mein_neuer_bot erste Nachricht
+**mein_neuer_bot erste Nachricht** <<<---- meine Eingabe bei Telegramm  ( Bot Meldung ) 
 
 IoT Notification Bot:
 Your device 'mein_neuer_bot' has been registered.
@@ -41,7 +41,7 @@ Remember, that you need to subscribe first, to get notifications.
 
 Nun deinen Bot anmelden damit du auch die Nachrichten erhältst
 
-**/subscribe mein_neuer_bot**  <<<---- meine Eingabe bei Telegramm 
+**/subscribe mein_neuer_bot**  <<<---- meine Eingabe bei Telegramm ( meinen Bot für mich anmelden )
 
 IoT Notification Bot:
 You have subscribed to the device mein_neuer_bot
@@ -51,4 +51,6 @@ Wenn nun der richtige Bot Link aufgerufen worden ist sollte die Nachricht
 mein_neuer_bot erste Nachricht
 
 **bei dir im Telegramm ankommen** ---> meine erste Meldung bei Telegram ;-)
+
+Die Weblinks oben sind nur als Demo zu betrachten 
 
