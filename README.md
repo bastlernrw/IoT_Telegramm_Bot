@@ -1,7 +1,7 @@
 # IoT_Telegramm_Bot
 IoT Telegramm Bot auf ARDUINO oder ESP8266
 
-du musst erst mal den Bot als Kontakt in [Telegramm](https://telegram.org/) anlegen 
+du musst erst mal den Bot als Kontakt in [https://telegram.org](https://telegram.org/) anlegen 
 
 KontaktName: **IoTNotificationBot**
 
@@ -32,11 +32,11 @@ mein_neuer_bot erste Nachricht
 
 IoT Notification Bot:
 Your device 'mein_neuer_bot' has been registered.
-Your API-Key is: '*********'
+Your API-Key is: 'xxxxxxxxx'
 The Notification message is:
 ' mein_neuer_bot 
 erste Nachricht'
-https://telegramiotbot.com/api/notify?token=********
+https://telegramiotbot.com/api/notify?token=xxxxxxxxx
 Remember, that you need to subscribe first, to get notifications.
 
 Nun deinen Bot anmelden damit du auch die Nachrichten erhältst
