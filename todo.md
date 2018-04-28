@@ -7,21 +7,21 @@
 
 &nbsp; #include <ESP8266HTTPClient.h>
 
-&nbsp;
 
-&nbsp; void setup()
 
-&nbsp;  -> Serial.begin( ) 
+ void setup()
 
-&nbsp;  -> WiFi.begin( ) 
+-> Serial.begin( ) 
 
-&nbsp;  -> WiFi.status( ) 
+ -> WiFi.begin( ) 
 
-&nbsp;
+ -> WiFi.status( ) 
 
-&nbsp;
 
-&nbsp;
 
-&nbsp;
+
+
+
+
+
   
