@@ -1,15 +1,14 @@
 # Anforderungsliste
-&nbsp;
 
-&nbsp; #include <Arduino.h>
+#include <Arduino.h>
 
-&nbsp; #include <ESP8266WiFi.h>
+#include <ESP8266WiFi.h>
 
-&nbsp; #include <ESP8266HTTPClient.h>
-
+#include <ESP8266HTTPClient.h>
 
 
- void setup()
+
+ * void setup()
 
 -> Serial.begin( ) 
 
