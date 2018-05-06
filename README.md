@@ -59,3 +59,5 @@ das ganze klappt auch mit eingenem Text
 **https://telegramiotbot.com/api/notify?token=xxxxxxxxxxx&message=hallo_bastlernrw**
 
 Quellcode Version 0.2 main_2018_05_06.c 
+
+mögliche Eingangsbeschaltung für ESP8266 NODEMCU Bot esp8266_bot.JPG
