@@ -1,11 +1,11 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
-
-
-const int message_1 = 2 ;
-int message_1_state = 0 ;
-
+//----------------------------------------------------------------------------------------------------------------------------
+const int inputPin_1 = 5 ; // define Input Port
+int inputPin_1_state = LOW ;
+int inputPin_1_read = 0 ;
+//----------------------------------------------------------------------------------------------------------------------------
 const char * ssid = "********";                                 // Wifi SSID
 const char * password = "********";                      		// Wifif password
 
@@ -54,25 +54,60 @@ void setup()
           }
       }
 //----------------------------------------------------------------------------------------------------------------------------
- void WiFi_println_bot()
+void WiFi_println_bot_on()
   {
       HTTPClient http;
       String url = SERVER_URL;
-      url += MSG_TOKEN ;
-      url += "Tinkerbot%20message";
+      url += STATUS_TOKEN ;
+      url += "Tinkerbot%20message%20on";
       http.begin(url);
-      Serial.print("[HTTP] GET...http://telegramiotbot.com");
+      // Serial.print("[HTTP] GET...http://telegramiotbot.com");
       int httpCode = http.GET();
       if(httpCode)
         {
-          Serial.printf(" Retour code: %d\n", httpCode);
+          Serial.printf(" Retour code: on %d\n", httpCode);
         } else{
           Serial.print("... failed, no connection or no HTTP server\n");
         }
     }
 //----------------------------------------------------------------------------------------------------------------------------
-
+void WiFi_println_bot_off()
+     {
+         HTTPClient http;
+         String url = SERVER_URL;
+         url += STATUS_TOKEN ;
+         url += "Tinkerbot%20message%20off";
+         http.begin(url);
+         // Serial.print("[HTTP] GET...http://telegramiotbot.com");
+         int httpCode = http.GET();
+         if(httpCode)
+           {
+             Serial.printf(" Retour code Off : %d\n", httpCode);
+           } else {
+             Serial.print("... failed, no connection or no HTTP server\n");
+           }
+       }
+//----------------------------------------------------------------------------------------------------------------------------
 void loop()
 {
-// noch one funktionen 
+  // read the state of the pushbutton value:
+     inputPin_1_read = digitalRead(inputPin_1);
+     // check if the pushbutton is pressed.
+     // if it is, the buttonState is HIGH:
+     if (inputPin_1_read == HIGH) { //Check if Button was pressed before and being pressed now
+       if (inputPin_1_state == LOW)
+       {
+         // turn LED on:
+         //Serial.print("LED ON \n");
+          WiFi_println_bot_on();
+         inputPin_1_state = HIGH;
+       }
+     }
+     else {
+       if (inputPin_1_state == HIGH) {
+         //Serial.print("LED OFF \n");
+         WiFi_println_bot_off();
+         inputPin_1_state = LOW;
+       }
+     }
 }
