@@ -15,7 +15,7 @@ Serielle Ausgabe der Anzeige Ausgänge LED ( 74HC595 ) ?
 # Funktionaufrufe als Überblick ( #include <ESP8266WiFi.h> )
 
 
-       WiFi.hostname("tinkerfuxbot");                         // DNS Hostname setzen  
+       WiFi.hostname("tinkerfux_bot");                         // DNS Hostname setzen  ( tinkerfux Bot )
        WiFi.begin(ssid, password);                            // Login Username PWD   
        Serial.println("");                                       
        while (WiFi.status() != WL_CONNECTED)                  // Abfrage WLAN aktibe sonst "."
