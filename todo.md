@@ -69,4 +69,6 @@ Wire.beginTransmission(0x80);                     // IC-Adresse
 Wire.write(0x0FF);                                // Byte senden Daten 
 
 Wire.endTransmission();                           // I2C Stopbedingung
+
+
  
