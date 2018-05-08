@@ -56,4 +56,5 @@ Serielle Ausgabe der Anzeige Ausgänge LED ( 74HC595 ) ?
 
 
 
+Quelle: http://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/station-class.html
 
