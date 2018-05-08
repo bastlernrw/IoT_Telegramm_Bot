@@ -58,3 +58,15 @@ Serielle Ausgabe der Anzeige Ausgänge LED ( 74HC595 ) ?
 
 Quelle: http://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/station-class.html
 
+# Funktionaufrufe als Überblick ( #include <Wire.h> )
+
+Wire.begin(2, 0);                                 // I2C-Bus initialisieren GPIO2-Data GPIO0-Clock
+
+Wire.setClock(1000);                              // I2C-Bus Freqenz
+
+Wire.beginTransmission(0x80);                     // IC-Adresse
+
+Wire.write(0x0FF);                                // Byte senden Daten 
+
+Wire.endTransmission();                           // I2C Stopbedingung
+ 
